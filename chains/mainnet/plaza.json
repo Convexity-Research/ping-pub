@@ -2,10 +2,10 @@
   "chain_name": "plaza",
   "registry_name": "plaza",
   "api": [
-      {"provider": "Plaza AWS", "address": "https://plazafinance.dev/"}
+      {"provider": "Convexity", "address": "https://rest.plazafinance.dev"}
   ],
   "rpc": [
-      {"provider": "Plaza AWS", "address": "https://plazafinance.dev/"}
+      {"provider": "Convexity", "address": "https://rpc.plazafinance.dev"}
   ],
   "sdk_version": "0.50.7",
   "coin_type": "118",
