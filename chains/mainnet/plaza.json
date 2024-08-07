@@ -1,0 +1,22 @@
+{
+  "chain_name": "plaza",
+  "registry_name": "plaza",
+  "api": [
+      {"provider": "Convexity", "address": "https://rest.plazafinance.dev"}
+  ],
+  "rpc": [
+      {"provider": "Convexity", "address": "https://rpc.plazafinance.dev"}
+  ],
+  "sdk_version": "0.50.7",
+  "coin_type": "118",
+  "min_tx_fee": "800",
+  "addr_prefix": "plaza",
+  "logo": "/logos/cosmos.svg",
+  "assets": [{
+      "base": "uatom",
+      "symbol": "ATOM",
+      "exponent": "6",
+      "coingecko_id": "cosmos", 
+      "logo": "/logos/cosmos.svg"
+  }]
+}
