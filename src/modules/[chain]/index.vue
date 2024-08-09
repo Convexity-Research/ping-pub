@@ -265,7 +265,7 @@ const amount = computed({
 
     <AdBanner id="chain-home-banner-ad" unit="banner" width="970px" height="90px" />
 
-    <div v-if="blockchain.supportModule('governance')" class="bg-base-100 rounded mt-4 shadow">
+    <!-- <div v-if="blockchain.supportModule('governance')" class="bg-base-100 rounded mt-4 shadow">
       <div class="px-4 pt-4 pb-2 text-lg font-semibold text-main">
         {{ $t('index.active_proposals') }}
       </div>
@@ -275,7 +275,7 @@ const amount = computed({
       <div class="pb-8 text-center" v-if="store.proposals?.proposals?.length === 0">
         {{ $t('index.no_active_proposals') }}
       </div>
-    </div>
+    </div> -->
 
     <div class="bg-base-100 rounded mt-4 shadow">
       <div class="flex justify-between px-4 pt-4 pb-2 text-lg font-semibold text-main">
@@ -294,7 +294,7 @@ const amount = computed({
             ${{ format.tokenValue(walletStore.balanceOfStakingToken) }}
           </div>
         </div>
-        <div class="bg-gray-100 dark:bg-[#373f59] rounded-sm px-4 py-3">
+        <!-- <div class="bg-gray-100 dark:bg-[#373f59] rounded-sm px-4 py-3">
           <div class="text-sm mb-1">{{ $t('module.staking') }}</div>
           <div class="text-lg font-semibold text-main">
             {{ format.formatToken(walletStore.stakingAmount) }}
@@ -311,8 +311,8 @@ const amount = computed({
           <div class="text-sm" :class="color">
             ${{ format.tokenValue(walletStore.rewardAmount) }}
           </div>
-        </div>
-        <div class="bg-gray-100 dark:bg-[#373f59] rounded-sm px-4 py-3">
+        </div> -->
+       <!-- <div class="bg-gray-100 dark:bg-[#373f59] rounded-sm px-4 py-3"> 
           <div class="text-sm mb-1">{{ $t('index.unbonding') }}</div>
           <div class="text-lg font-semibold text-main">
             {{ format.formatToken(walletStore.unbondingAmount) }}
@@ -320,7 +320,7 @@ const amount = computed({
           <div class="text-sm" :class="color">
             ${{ format.tokenValue(walletStore.unbondingAmount) }}
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div v-if="walletStore.delegations.length > 0" class="px-4 pb-4 overflow-auto">
@@ -373,10 +373,10 @@ const amount = computed({
       </div>
 
       <div class="grid grid-cols-3 gap-4 px-4 pb-6 mt-4">
-        <label for="PingTokenConvert" class="btn btn-primary text-white">{{ $t('index.btn_swap') }}</label>
+        <!-- <label for="PingTokenConvert" class="btn btn-primary text-white">{{ $t('index.btn_swap') }}</label> -->
         <label for="send" class="btn !bg-yes !border-yes text-white" @click="dialog.open('send', {}, updateState)">{{ $t('account.btn_send') }}</label>
-        <label for="delegate" class="btn !bg-info !border-info text-white"
-          @click="dialog.open('delegate', {}, updateState)">{{ $t('account.btn_delegate') }}</label>
+        <!-- <label for="delegate" class="btn !bg-info !border-info text-white"
+          @click="dialog.open('delegate', {}, updateState)">{{ $t('account.btn_delegate') }}</label> -->
         <RouterLink to="/wallet/receive" class="btn !bg-info !border-info text-white hidden">{{ $t('index.receive') }}</RouterLink>
       </div>
       <Teleport to="body">

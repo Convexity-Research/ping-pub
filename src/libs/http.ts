@@ -29,6 +29,7 @@ try {
 }
 // */
 export async function get(url: string) {
+  console.log("HERE")
   return (await fetch(url, {referrerPolicy: 'origin-when-cross-origin'})).json();
 }
 

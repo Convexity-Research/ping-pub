@@ -340,7 +340,7 @@ function mapAmount(events:{type: string, attributes: {key: string, value: string
     </div>
 
     <!-- Delegations -->
-    <div class="bg-base-100 px-4 pt-3 pb-4 rounded mb-4 shadow">
+    <!-- <div class="bg-base-100 px-4 pt-3 pb-4 rounded mb-4 shadow">
       <div class="flex justify-between">
         <h2 class="card-title mb-4">{{ $t('account.delegations') }}</h2>
         <div class="flex justify-end mb-4">
@@ -442,7 +442,7 @@ function mapAmount(events:{type: string, attributes: {key: string, value: string
           </tbody>
         </table>
       </div>
-    </div>
+    </div> -->
 
     <!-- Unbonding Delegations -->
     <div
